@@ -32,7 +32,7 @@
     <h1 class="text-white text-xl font-bold text-center">My Works</h1>
   </section>
   <section class="flex justify-center mt-5">
-    <div class="grid grid-cols-2 gap-4">
+    <div class="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
       {#each showcases as showcase}
         <ShowCaseCard {...showcase} />
       {/each}

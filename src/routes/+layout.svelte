@@ -3,11 +3,12 @@
   import SideNav from "$components/core/SideNav.svelte";
   import type { Route } from "$lib/types";
   import "../app.css";
+  import Error from "./+error.svelte";
 
   const routes: Route[] = [
     {
       name: "Home",
-      icon: "mdi-home",
+      icon: "mdi-arrow-up",
       to: "/",
     },
     {
@@ -22,14 +23,19 @@
     },
   ];
 
+  const social = [
+    {
+      icon: "mdi-github",
+      link: "https://github.com/paulexconde/",
+    },
+  ];
+
   let scrollY: number;
 </script>
 
 <svelte:window bind:scrollY />
 
-{#if scrollY >= 500}
-  <SideNav {routes} />
-{/if}
+<SideNav {routes} links={social} />
 
 <main
   style:background={`linear-gradient(rgba(39, 41, 50, ${
@@ -38,7 +44,7 @@
     scrollY * 0.002
   })), url("./images/bg.jpg") no-repeat fixed center/cover`}
 >
-  <AppBar {routes} />
+  <AppBar {routes} links={social} />
   <slot />
 </main>
 

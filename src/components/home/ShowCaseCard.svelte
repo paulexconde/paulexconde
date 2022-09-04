@@ -16,7 +16,7 @@
 >
   {#if showContent}
     <section
-      class="flex flex-col justify-center items-center bg-dark rounded h-full"
+      class="flex flex-col justify-center items-center bg-dark opacity-80 rounded h-full"
     >
       <h1 class="text-2xl m-2">{name}</h1>
       <p class="text-sm m-2 text-center">{description}</p>
