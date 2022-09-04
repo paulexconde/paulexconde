@@ -26,7 +26,7 @@
   ];
 </script>
 
-<main>
+<main id="showcase">
   <section>
     <div class="mdi mdi-apps mdi-48px text-white text-center" />
     <h1 class="text-white text-xl font-bold text-center">My Works</h1>

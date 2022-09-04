@@ -18,7 +18,7 @@
     {
       name: "My Works",
       icon: "mdi-apps-box",
-      to: "#my-works",
+      to: "#showcase",
     },
   ];
 
