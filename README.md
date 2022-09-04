@@ -39,4 +39,6 @@ You can preview the production build with `npm run preview`.
 
 ## TODO
 
-- Works
+- [x] Works
+- [ ] Contact
+- [ ] Footer
