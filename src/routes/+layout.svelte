@@ -36,7 +36,7 @@
     scrollY * 0.002
   }), rgba(39, 41, 50, ${
     scrollY * 0.002
-  })), url("/images/bg.jpg") no-repeat fixed center/cover`}
+  })), url("./images/bg.jpg") no-repeat fixed center/cover`}
 >
   <AppBar {routes} />
   <slot />
